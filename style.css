@@ -175,3 +175,13 @@ container div:nth-of-type(20) {
     height: 300px;
   }
 }
+
+@media (min-width: 900px){
+  container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-gap:30px;
+  grid-template-column:repeat(4,1fr)
+}
+}
