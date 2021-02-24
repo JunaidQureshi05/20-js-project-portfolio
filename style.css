@@ -33,7 +33,7 @@ header {
   background-color: purple;
   text-align: center;
 }
-container a {
+#container a {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -47,16 +47,16 @@ container a {
   transform: translate(-50%, -50%);
 }
 
-container div {
+#container div {
   border: 1px solid black;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   position: relative;
   margin: 15px;
   box-shadow: 3px 3px 10px grey;
 }
 
-container {
+#container {
   width: 90%;
   margin: auto;
   display: flex;
@@ -65,11 +65,11 @@ container {
   justify-content: center;
 }
 
-container a:focus {
+#container a:focus {
   outline: none;
 }
 
-container a:hover {
+#container a:hover {
   background: black;
   color: white;
 }
@@ -91,88 +91,9 @@ footer {
   background: purple;
   padding: 20px;
 }
-/* adding covers to divs */
-container div:nth-of-type(1) {
-  background: url('./img/1.png') no-repeat center/cover;
-  background-size: cover;
-}
-container div:nth-of-type(2) {
-  background: url('./img/2.png') no-repeat center center/cover;
-}
-container div:nth-of-type(3) {
-  background: url('./img/3.png') no-repeat center center/contain;
-}
-container div:nth-of-type(4) {
-  background: url('./img/4.png') no-repeat center center/cover;
-}
 
-container div:nth-of-type(5) {
-  background: url('./img/5.png') no-repeat center center/cover;
-}
-container div:nth-of-type(6) {
-  background: url('./img/6.png') no-repeat center center/cover;
-}
-container div:nth-of-type(7) {
-  background: url('./img/7.png') no-repeat center center/cover;
-}
-container div:nth-of-type(8) {
-  background: url('./img/8.png') no-repeat center center/contain;
-}
-container div:nth-of-type(9) {
-  background: url('./img/9.png') no-repeat center center/cover;
-}
-container div:nth-of-type(10) {
-  background: url('./img/10.png') no-repeat center center/contain;
-}
-container div:nth-of-type(11) {
-  background: url('./img/11.png') no-repeat center center/cover;
-}
-container div:nth-of-type(12) {
-  background: url('./img/12.png') no-repeat center/contain;
-}
-container div:nth-of-type(13) {
-  background: url('./img/13.png') no-repeat center center/cover;
-}
-container div:nth-of-type(14) {
-  background: url('./img/14.png') no-repeat center/contain;
-}
-container div:nth-of-type(15) {
-  background: url('./img/15.png') no-repeat center center/cover;
-}
-container div:nth-of-type(16) {
-  background: url('./img/16.png') no-repeat center/cover;
-}
-container div:nth-of-type(17) {
-  background: url('./img/17.png') no-repeat center center/cover;
-}
-container div:nth-of-type(18) {
-  background: url('./img/18.png') no-repeat center center/cover;
-}
-container div:nth-of-type(19) {
-  background: url('./img/19.png') no-repeat center center/cover;
-}
-container div:nth-of-type(20) {
-  background: url('./img/20.png') no-repeat center center/cover;
-}
-
-/* Responsiveness */
-
-@media (max-width: 800px) {
-  h1 {
-    font-size: 20px;
-  }
-  .fa-js {
-    color: yellow;
-    font-size: 30px;
-    margin-left: 10px;
-    transform: none;
-  }
-  container {
-    width: 100%;
-  }
-  container div {
-    width: 300px;
-    height: 300px;
-  }
-}
+#container div img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
